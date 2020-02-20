@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
- <div class="heading1"><h1>Student List</h1></div>
- <div class="heading2"><h1>Hogwart's Batch 1991</h1></div>
- <p>Student Lists</p>
-    
-        <table>
-            <tr>
-              <th>Name</th>
-              <th>House</th>
-            </tr>
-            <template>
-            <tr>
-              <td id="name">Harry</td>
-              <td id="house">gryffinder</td>
-            </tr>
-        </template>
-          </table>
-
+    <div id="title"><h1>STUDENT LIST</h1></div>
+ <template class="one">
+ <section class="student">
+     <div class="grid">
+     <div class="name">name</div>
+     <div class="house">house</div>
+     <div class="details"><button>Details</button></div>
+    </div>
+    </section>
+</template> 
 <main></main>
-
+<div class="modal-background hide">
+    <div class="modal-content" data-theme="">
+        <p class="modal-name">Description</p>
+        <p class="modal-house">Description</p>
+      <img src="" alt="" class="modal-image" />
+      <label id="theme-changer">
+<!--         Choose theme
+        <select name="theme" id="theme">
+          <option value="">Select</option>
+          <option value="Gryffindor">Gryffindor theme</option>
+          <option value="Hufflepuff">Hufflepuff theme</option>
+          <option value="Ravenclaw">Ravenclaw theme</option>
+          <option value="Slytherin">Slytherin theme</option>
+        </select>
+      </label> -->
+    </div>
+  </div>
     <script src="main.js"></script>
 </body>
 </html>
